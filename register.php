@@ -12,7 +12,6 @@ if(isset($_POST['submit'])) {
         
         $temporary_name = $_FILES["picture"]["tmp_name"];
         $file_name = basename($_FILES["picture"]["name"]);
-        // $download_folder = "/opt/lampp/htdocs/php_exam/img_profile/";
         $download_folder = "img_profile/";
         $path_file = $download_folder . $file_name;
         move_uploaded_file($temporary_name, $path_file);
